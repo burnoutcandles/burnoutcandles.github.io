@@ -1,0 +1,469 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: block;
+  scroll-behavior: smooth;
+  font-family: "Century Gothic", sans-serif, Arial, Helvetica;
+
+  height: 100%;
+  width: 100%;
+  /* margin: 0; */
+}
+
+#container {
+  min-height: 100%;
+  /* background-color: red; */
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 75px;
+}
+
+.topnav {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.topnav img {
+  width: 110px;
+  display: inline;
+}
+
+.topnav li {
+  display: inline-block;
+  float: none;
+}
+
+.topnav a {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+}
+
+.topnav a:hover {
+  color: #b17419;
+}
+
+/* MOBILE NAV */
+.mobiletopnav {
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  display: none;
+}
+
+#links {
+  display: none;
+}
+
+.mobiletopnav a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.mobiletopnav a.icon {
+  background-color: #d9d6c3;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mobiletopnav a.mobilelogo {
+  display: inline-block;
+}
+
+.wrapper {
+  display: block;
+  height: 700px;
+  /* width: 100%; */
+  width: 99%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  background-image: url(../images/wrapper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.auxiliary-container {
+  width: 100%;
+  text-align: center;
+}
+
+.auxiliary-text {
+  /* display: table-cell; */
+  /* width: 413px; */
+  /* text-align: center; */
+
+  text-align: left;
+
+  display: inline-block;
+  vertical-align: top;
+
+  /* margin-left: 40px;
+  margin-right: 40px; */
+  line-height: 0.6;
+
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  /* background-color: hotpink; */
+  max-width: 100%;
+}
+
+.auxiliary-text p {
+  line-height: 1.3;
+  margin-top: 5px;
+}
+
+footer {
+  position: relative;
+  background-color: #d9d6c3;
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  margin-top: -75px;
+  clear: both;
+}
+
+#ig {
+  font-size: 40px;
+  margin: 5px;
+  color: black;
+}
+
+footer h4 {
+  margin-top: 1px;
+  margin-bottom: 0px;
+}
+
+/* CandleCare IS BELOW*/
+.candlecarewrapper {
+  background-image: url(../images/candlecare.jpg);
+  height: 80%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.candlecare {
+  position: relative;
+  text-align: center;
+  margin-top: 25px;
+  color: #000000;
+  height: 50%;
+  width: 100%;
+  top: 25%;
+  padding: 1px;
+  background-color: rgba(217, 214, 195, 0.7);
+  animation-name: candlecaretrans;
+  animation-duration: 2s;
+  overflow: auto;
+}
+
+.candlecare h1 {
+  font-size: 2em;
+}
+
+.candlecare h4 {
+  font-size: 1em;
+  line-height: 4;
+}
+
+.candlecare::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.candlecare::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.candlecare::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.candlecare::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 1px solid rgba(217, 214, 195, 0.7); /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*Animations*/
+@keyframes candlecaretrans {
+  from {
+    background-color: #d9d6c3;
+  }
+  to {
+    background-color: rgba(217, 214, 195, 0.9);
+  }
+}
+
+/* ORDER PAGE IS BELOW*/
+.orderwrap {
+  height: 80%;
+  width: 100%;
+  background-image: url(../images/Orders.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+.orderinfo {
+  position: relative;
+  text-align: center;
+  margin-top: 25px;
+  color: #000000;
+  height: 45%;
+  width: 100%;
+  top: 25%;
+  padding: 1px;
+  background-color: rgba(217, 214, 195, 0.9);
+  animation-name: candlecaretrans;
+  animation-duration: 2s;
+  overflow: auto;
+}
+
+.orderinfo h3 {
+  font-size: 2em;
+}
+
+.orderinfo h4 {
+  font-size: 1.1em;
+  line-height: 4;
+}
+
+.orderinfo::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.orderinfo::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.orderinfo::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.orderinfo::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 1px solid rgba(217, 214, 195, 0.7); /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* PRODUCTS PAGE */
+
+.perfectcandle {
+  position: relative;
+  width: 33.33%;
+  float: left;
+  padding: 10px;
+  margin-top: 18px;
+  height: auto;
+  text-align: center;
+}
+
+.perfectcandle img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+  transition: 0.5s ease;
+}
+
+.perfectcandle:hover .image {
+  opacity: 0.3;
+}
+
+.perfectcandle:hover .middle {
+  opacity: 1;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text {
+  background-color: rgba(217, 214, 195, 1);
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.skullcandle {
+  position: relative;
+  width: 33.33%;
+  float: left;
+  padding: 10px;
+  margin-top: 18px;
+  height: auto;
+  text-align: center;
+}
+
+.skullcandle img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+  transition: 0.5s ease;
+}
+
+.skullcandle:hover .image {
+  opacity: 0.3;
+}
+
+.skullcandle:hover .middle {
+  opacity: 1;
+}
+
+.coaster {
+  position: relative;
+  width: 33.33%;
+  float: left;
+  padding: 10px;
+  margin-top: 18px;
+  height: auto;
+  text-align: center;
+}
+
+.coaster img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+  transition: 0.5s ease;
+}
+
+.coaster:hover .image {
+  opacity: 0.3;
+}
+
+.coaster:hover .middle {
+  opacity: 1;
+}
+
+.perfectcandle,
+.coaster,
+.skullcandle h1 {
+  text-shadow: 3px 3px rgba(217, 214, 195, 0.7);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mobiletopnav {
+    display: block;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .candlecare h4 {
+    line-height: 2;
+  }
+
+  .orderinfo h4 {
+    line-height: 2;
+  }
+
+  .perfectcandle,
+  .skullcandle,
+  .coaster {
+    width: 100%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .mobiletopnav {
+    display: block;
+  }
+
+  .topnav {
+    display: none;
+  }
+}
+
+/* IPAD */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .mobiletopnav {
+    display: block;
+  }
+
+  .topnav {
+    display: none;
+  }
+
+  .orderinfo h3 {
+    font-size: 60px;
+  }
+
+  .orderinfo h4 {
+    font-size: 30px;
+    line-height: 2.6;
+  }
+
+  .orderinfo h2 {
+    font-size: 40px;
+  }
+
+  .candlecare h1 {
+    font-size: 60px;
+  }
+
+  .candlecare h4 {
+    font-size: 30px;
+    line-height: 2.6;
+  }
+
+  .candlecarewrapper {
+    height: 90%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mobiletopnav {
+    display: none;
+  }
+
+  .topnav {
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .mobiletopnav {
+    display: none;
+  }
+
+  .topnav {
+    display: block;
+  }
+}

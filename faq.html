@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/stylesheet.css" />
+        <link rel="stylesheet" href="css/accordion.css" />
+        <meta name="Authors" content="Matthew Pimentel, Ryan Oliveira" />
+        <script
+            src="https://kit.fontawesome.com/e66f2503c4.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>burnout candles</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/jpg" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/jpg" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+    </head>
+
+    <body onresize="resizeAccordions()">
+    
+    <div class="mobiletopnav">
+      <a href="index.html" class="mobilelogo">
+        <img src="images/logo.jpg" alt="Logo" width="35" height="35" />
+      </a>
+      <div id="links">
+        <a href="products.html">products</a>
+        <a href="orders.html">orders</a>
+        <a href="candlecare.html">candle care</a>
+        <a href="faq.html">faq</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+        <div id="container">
+            <div id="main">
+                <div class="topnav">
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="orders.html">order</a></li>
+                    <li>
+                      <a href="index.html"
+                        ><img  alt="Skull logo"src="images/logo.jpg" width="110" alt="Logo"
+                      /></a>
+                    </li>
+                    <li><a href="candlecare.html">candle care</a></li>
+                    <li><a href="faq.html">faq</a></li>
+                  </div>
+
+                <!-- accordions -->
+                <div class="accordion-group">
+                    <button type="button" class="accordion__button">What are the candles made of?</button>
+                    <div class="accordion__content">
+                        <p>
+                            The candles are 100% soy. They are also non-GMO and are gluten, paraben, and phthalate free!
+                        </p>
+                    </div>
+
+                    <button type="button" class="accordion__button">What is the packaging like?</button>
+                    <div class="accordion__content">
+                        <p>
+                            The packaging consists of 100% reusable cloth bags. The candles also come in our high 
+                            quality tins, which are also reusable.
+                        </p>
+                    </div>
+
+                    <button type="button" class="accordion__button">What payment methods are offered?</button>
+                    <div class="accordion__content">
+                        <p>
+                            We currently only offer payment through e-transfer.
+                        </p>
+                    </div>
+
+                    <button type="button" class="accordion__button">How can I order?</button>
+                    <div class="accordion__content">
+                        <p>
+                            At this time you can only place an order through our instagram DMs. We're currently looking
+                            to implement better ways for you to shop and order our products.</br></br>
+                            
+                            Check out our <a href="orders.html" style="text-decoration: none; color: #b17419;">order</a> page for more info on placing your order!
+                        </p>
+                    </div>
+
+                    <button type="button" class="accordion__button">How long does it take to receive my order?</button>
+                    <div class="accordion__content">
+                        <p>
+                            Each candle is made to order. Please allow for up to 3 days for the candles to be made and 
+                            cured before being packaged. We will notify you about your delivery and pick-up dates within 
+                            the same week. 
+                        </p>
+                    </div>
+
+                    <!--  -->
+                    <button type="button" class="accordion__button">How are your products made?</button>
+                    <div class="accordion__content">
+                        <p>
+                            All of our candles are made in a sanitized and enclosed environment. Our wax is melted to the 
+                            perfect temperature then mixed with our fragrance oils to create a beautiful aroma. All orders 
+                            are packaged separately and stored in a cool environment to cure.
+                        </p>
+                    </div>
+
+                    
+
+                    <button type="button" class="accordion__button">Do you have any special promotions? </button>
+                    <div class="accordion__content">
+                        <p>
+                            Burnout offers many promotions and participates in many giveaways throughout the year. Follow 
+                            us on instagram <a href="https://www.instagram.com/burnout.candles/" target="_blank" style="text-decoration: none; color: #b17419;">@burnout.candles</a> to stay updated on our latest announcements.
+                        </p>
+                    </div>
+
+                    <button type="button" class="accordion__button">I am not fully satisfied with my purchase. Can I get a refund? </button>
+                    <div class="accordion__content">
+                        <p>
+                            We are very sorry you are not happy with your purchase. Each candle is made to order inspected 
+                            to meet our quality standards. Unfortunately, due to sanitary reasons, we do not offer returns 
+                            or exchanges. 
+                        </p>
+                    </div>
+
+                    <button type="button" class="accordion__button">I have a question that isn't answered here who can I contact?</button>
+                    <div class="accordion__content">
+                        <p>
+                            Feel free to contact us by email at <a href="mailto:burnoutcandlesinfo@gmail.com" style="text-decoration: none; color: #b17419;">burnoutcandlesinfo@gmail.com</a></br></br> 
+                            
+                            We answer emails between Monday-Friday.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        
+        <footer id="footer">
+            <a href="https://www.instagram.com/burnout.candles/" target="_blank"
+                ><i class="fab fa-instagram" id="ig"></i
+            ></a>
+            <h4>@burnout.candles</h4>
+        </footer>
+        
+        
+      </body>
+
+      <script>
+      function dropDown() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+
+      
+
+      
+
+
+    <!-- Makes accordions work -->
+    <script>
+        document.querySelectorAll('.accordion__button').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionContent = button.nextElementSibling;
+                button.classList.toggle('accordion__button--active');
+                if (button.classList.contains('accordion__button--active')) {
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';  
+                    // accordionContent.style.height = accordionContent.scrollHeight + 0 + 'px';
+                    // accordionContent.style.padding = "10px 15px";
+                } else {
+                    accordionContent.style.maxHeight = 0;  
+                    // accordionContent.style.height = 0;
+                    // accordionContent.style.padding = "0 15px";
+                }
+            });
+        });
+    </script>
+
+    <!-- Called on window resize to fix accordion content height change -->
+    <script>
+        function resizeAccordions() {
+            document.querySelectorAll('.accordion__button').forEach(button => {
+                const accordionContent = button.nextElementSibling;
+                if(button.classList.contains('accordion__button--active')){
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+                    // accordionContent.style.height = accordionContent.scrollHeight + 0 + 'px';    
+                }
+            });
+        }
+    </script>
+
+
+</html>

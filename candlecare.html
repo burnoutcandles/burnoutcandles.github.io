@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+    <meta name="Authors" content="Matthew Pimentel, Ryan Oliveira" />
+    <script
+      src="https://kit.fontawesome.com/e66f2503c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/e66f2503c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>burnout candles</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+  </head>
+
+  <body>
+    <div class="topnav">
+      <li><a href="products.html">products</a></li>
+      <li><a href="orders.html">order</a></li>
+      <li>
+        <a href="index.html"
+          ><img src="images/logo.jpg" width="110" alt="Logo"
+        /></a>
+      </li>
+      <li><a href="candlecare.html">candle care</a></li>
+      <li><a href="faq.html">faq</a></li>
+    </div>
+
+    <div class="mobiletopnav">
+      <a href="index.html" class="mobilelogo">
+        <img src="images/logo.jpg" alt="Logo" width="35" height="35" />
+      </a>
+      <div id="links">
+        <a href="products.html">products</a>
+        <a href="orders.html">orders</a>
+        <a href="candlecare.html">candle care</a>
+        <a href="faq.html">faq</a>
+      </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="candlecarewrapper">
+      <div class="candlecare">
+        <h1>candle care</h1>
+        <h4>1. Trim the wick 1/4 inch after every use to keep the wax clean</h4>
+        <h4>2. Allow the wax to melt to the rims before extinguishing</h4>
+        <h4>3. Avoid burning the candle for more than 3 hours at a time</h4>
+        <h4>4. Never leave a burning candle unattended</h4>
+        <h4>
+          5. Place the candle on a stable surface, heat resistant surface and
+          away from flammable objects
+        </h4>
+      </div>
+    </div>
+    <footer style="bottom: 0; position: fixed">
+      <a href="https://www.instagram.com/burnout.candles/" target="_blank"
+        ><i class="fab fa-instagram" id="ig"></i
+      ></a>
+      <h4>@burnout.candles</h4>
+    </footer>
+
+    <script>
+      function dropDown() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

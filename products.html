@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css" />
+    <meta name="Authors" content="Matthew Pimentel, Ryan Oliveira" />
+    <script
+      src="https://kit.fontawesome.com/e66f2503c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>burnout candles</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+  </head>
+
+  <body>
+    <div id="container" style="background-color: white">
+      <div id="main">
+        <div class="topnav">
+          <li><a href="products.html">products</a></li>
+          <li><a href="orders.html">order</a></li>
+          <li>
+            <a href="index.html">
+              <img src="images/logo.jpg" alt="logo" width="110" alt="Logo"
+            /></a>
+          </li>
+          <li><a href="candlecare.html">candle care</a></li>
+          <li><a href="faq.html">faq</a></li>
+        </div>
+    
+        <div class="mobiletopnav">
+          <a href="index.html" class="mobilelogo">
+            <img src="images/logo.jpg" alt="Logo" width="35" height="35" />
+          </a>
+          <div id="links">
+            <a href="products.html">products</a>
+            <a href="orders.html">orders</a>
+            <a href="candlecare.html">candle care</a>
+            <a href="faq.html">faq</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+    
+        <div class="perfectcandle">
+          <img class="image" src="images/Candleproduct.jpg" alt="Bunrout candle picture" />
+          <div class="middle">
+            <a
+              style="text-decoration: none; color: black"
+              href="./item/PerfectCandle.html"
+              ><div class="text">the perfect candle</div></a
+            >
+          </div>
+        </div>
+    
+        <div class="skullcandle">
+          <img class="image" src="images/skullcandleproduct.jpg" alt="Skull candle" />
+          <div class="middle">
+            <a
+              style="text-decoration: none; color: black"
+              href="./item/BurnoutSkull.html"
+              ><div class="text">the burnout skull</div></a
+            >
+          </div>
+        </div>
+    
+        <div class="coaster">
+          <img class="image" src="images/coasterproduct.jpg"alt="Charcoal coaster" />
+          <div class="middle">
+            <a
+              style="text-decoration: none; color: black"
+              href="./item/BlackStoneCoaster.html"
+              ><div class="text">the black stone coaster</div></a
+            >
+          </div>
+        </div>
+    
+        
+      </div>
+    </div>
+
+    <footer style="bottom: 0; position: relative">
+      <a href="https://www.instagram.com/burnout.candles/" target="_blank"
+        ><i class="fab fa-instagram" id="ig"></i
+      ></a>
+      <h4>@burnout.candles</h4>
+    </footer>
+
+    <script>
+      function dropDown() {
+        var x = document.getElementById("links");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

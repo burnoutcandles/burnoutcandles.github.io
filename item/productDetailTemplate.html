@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <!--
+    Things to update in template:
+      - showcase and select images
+      - <title> div
+      - Product Name
+      - Price
+      - Description
+      - Scents
+      - Colours/Category
+    -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product Card/Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/jpg" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/productDetail.css">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <script
+      src="https://kit.fontawesome.com/e66f2503c4.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        .img-item:nth-child(1),
+        .img-item:nth-child(2),
+        .img-item:nth-child(3){
+            margin-right: 0;
+        }
+    </style>
+
+    <!-- TODO: Put this in .css file when the final favicon is selected -->
+    <style>
+        .fa-check-circle{
+            color: #333;
+        }
+    </style>
+
+
+</head>
+  <body>
+    
+    <div id="container" style="background-color: white">
+        <div id="main">
+            <div class="topnav">
+                <li><a href="../products.html">products</a></li>
+                <li><a href="../orders.html">order</a></li>
+                <li>
+                  <a href="../index.html"
+                    ><img src="../images/logo.jpg" alt="Logo"
+                  /></a>
+                </li>
+                <li><a href="../candlecare.html">candle care</a></li>
+                <li><a href="../faq.html">faq</a></li>
+            </div>
+
+            <div class="mobiletopnav">
+                <a href="../index.html" class="mobilelogo">
+                    <img src="../images/logo.jpg" alt="Logo" style="width:35px;height:35px;" />
+                </a>
+                <div id="links">
+                    <a href="products.html">products</a>
+                    <a href="orders.html">orders</a>
+                    <a href="candlecare.html">candle care</a>
+                    <a href="faq.html">faq</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="dropDown()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+
+            <div class = "card-wrapper">
+            <div class = "card">
+                <!-- card left -->
+                <div class = "product-imgs">
+                <div class = "img-display">
+                    <div class = "img-showcase">
+                    <img src = "../images/skulls/skull_1.jpg" alt = "product image">
+                    <img src = "../images/skulls/skull_2.jpg" alt = "product image">
+                    <img src = "../images/skulls/skull_3.jpg" alt = "product image">
+                    <img src = "../images/skulls/skull_4.jpg" alt = "product image">
+                    </div>
+                </div>
+                <div class = "img-select">
+                    <div class = "img-item">
+                    <a href = "#" data-id = "1">
+                        <img src = "../images/skulls/skull_1.jpg" alt = "product image">
+                    </a>
+                    </div>
+                    <div class = "img-item">
+                    <a href = "#" data-id = "2">
+                        <img src = "../images/skulls/skull_2.jpg" alt = "product image">
+                    </a>
+                    </div>
+                    <div class = "img-item">
+                    <a href = "#" data-id = "3">
+                        <img src = "../images/skulls/skull_3.jpg" alt = "product image">
+                    </a>
+                    </div>
+                    <div class = "img-item">
+                    <a href = "#" data-id = "4">
+                        <img src = "../images/skulls/skull_4.jpg" alt = "product image">
+                    </a>
+                    </div>
+                </div>
+                </div>
+                <!-- card right -->
+                <div class = "product-content">
+                <h2 class = "product-title">product name here</h2>
+                <!-- <a href = "#" class = "product-link">visit nike store</a> -->
+                <!-- <div class = "product-rating">
+                    <i class = "fas fa-star"></i>
+                    <i class = "fas fa-star"></i>
+                    <i class = "fas fa-star"></i>
+                    <i class = "fas fa-star"></i>
+                    <i class = "fas fa-star-half-alt"></i>
+                    <span>4.7(21)</span>
+                </div> -->
+
+                <div class = "product-price">
+                    <!-- <p class = "last-price">Old Price: <span>$257.00</span></p>
+                    <p class = "new-price">New Price: <span>$249.00 (5%)</span></p> -->
+                    <p class = "product-price">Price: <span>$249.00</span></p>
+                </div>
+
+                <div class = "product-detail">
+                    <h2>about this item: </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+                    
+                    <h3>scents: (if it applies)</h3>
+                    <ol>
+                        <li>"it’s french" &ndash; <span>sweet french vanilla</span></li>
+                        <li>"blue slushy" &ndash; <span>cool blue raspberry</span></li>
+                        <li>"just lavender" &ndash; <span>literally that’s it</span></li>
+                        <li>"jacks girl" &ndash; <span>a beautiful rose</span></li>
+                        <li>"tanning time" &ndash; <span>coconut cream</span></li>
+                        <li>"the woods" &ndash; <span>cool musky pine</span></li>
+                        <li>"amber" &ndash; <span>the scent not the person</span> </li>
+                    </ol>
+
+                    <ul>
+                    <li><i class = "fas fa-check-circle"></i> Colours: <span>Colours</span></li>
+                    <!-- <li>Available: <span>in stock</span></li> -->
+                    <li><i class = "fas fa-check-circle"></i> Category: <span>Category</span></li>
+                    <li><i class = "fas fa-check-circle"></i> Shipping Area: <span>Local delivery/pickup within the GTA <br />
+                        <span style="margin-left: 1.1rem;">(delivery is 3 candle minimum purchase)</span></span></li>
+                    <li><i class = "fas fa-check-circle"></i> Shipping Fee: <span>Free</span></li>
+                    </ul>
+
+                </div>
+
+                <div class = "purchase-info">
+                    <!-- <input type = "number" min = "0" value = "1"> -->
+                    <button type = "button" class = "btn" onclick="location.href = '../orders.html';">
+                    How to Order <i class = "fas fa-shopping-cart"></i>
+                    </button>
+                    <!-- <button type = "button" class = "btn">Compare</button> -->
+                </div>
+
+                <!-- <div class = "social-links">
+                    <p>Share At: </p>
+                    <a href = "#">
+                    <i class = "fab fa-facebook-f"></i>
+                    </a>
+                    <a href = "#">
+                    <i class = "fab fa-twitter"></i>
+                    </a>
+                    <a href = "#">
+                    <i class = "fab fa-instagram"></i>
+                    </a>
+                    <a href = "#">
+                    <i class = "fab fa-whatsapp"></i>
+                    </a>
+                    <a href = "#">
+                    <i class = "fab fa-pinterest"></i>
+                    </a>
+                </div> -->
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <a href="https://www.instagram.com/burnout.candles/" target="_blank"
+            ><i class="fab fa-instagram" id="ig"></i
+        ></a>
+        <h4>@burnout.candles</h4>
+    </footer>
+
+    
+    <script src="../js/productDetailsScript.js"></script>
+
+    <script>
+        function dropDown() {
+          var x = document.getElementById("links");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+  </body>
+</html>
