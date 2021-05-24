@@ -177,7 +177,7 @@ footer h4 {
   width: 100%;
   top: 25%;
   padding: 1px;
-  background-color: rgba(217, 214, 195, 0.7);
+  background-color: rgba(217, 214, 195, 0.8);
   animation-name: candlecaretrans;
   animation-duration: 2s;
   overflow: auto;
@@ -210,21 +210,11 @@ footer h4 {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/*Animations*/
-@keyframes candlecaretrans {
-  from {
-    background-color: #d9d6c3;
-  }
-  to {
-    background-color: rgba(217, 214, 195, 0.9);
-  }
-}
-
 /* ORDER PAGE IS BELOW*/
 .orderwrap {
   height: 80%;
   width: 100%;
-  background-image: url(../images/Orders.jpg);
+  background-image: url(../images/candlecare.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -240,7 +230,7 @@ footer h4 {
   width: 100%;
   top: 25%;
   padding: 1px;
-  background-color: rgba(217, 214, 195, 0.9);
+  background-color: rgba(217, 214, 195, 0.8);
   animation-name: candlecaretrans;
   animation-duration: 2s;
   overflow: auto;
@@ -251,7 +241,7 @@ footer h4 {
 }
 
 .orderinfo h4 {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 4;
 }
 
@@ -372,6 +362,16 @@ footer h4 {
 .coaster,
 .skullcandle h1 {
   text-shadow: 3px 3px rgba(217, 214, 195, 0.7);
+}
+
+/*Animations*/
+@keyframes candlecaretrans {
+  from {
+    background-color: rgba(217, 214, 195, 1);
+  }
+  to {
+    background-color: rgba(217, 214, 195, 0.8);
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
